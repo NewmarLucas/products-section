@@ -7,9 +7,9 @@ function formatCurrency(value) {
 
 function generateRatingStars(value) {
   const filledStars = Array.from(Array(Math.floor(value))).map((_) => `<li><i class="fa fa-star" aria-hidden="true"></i></li>`).join('')
-  const halfStarts = value % 1 !== 0 ? `<li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>` : ''
+  const halfStars = value % 1 !== 0 ? `<li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>` : ''
   const emptyStars = Array.from(Array(5 - Math.ceil(value))).map((_) => `<li><i class="fa fa-star-o" aria-hidden="true"></i></li>`).join('')
-  return filledStars + halfStarts + emptyStars
+  return filledStars + halfStars + emptyStars
 }
 
 function createCards(data) {
