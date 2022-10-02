@@ -22,7 +22,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 
 li {
@@ -96,7 +96,8 @@ li {
 
 .product-data {
   height: 100%;
-  padding: 16px 16px 0 16px;
+  width: 100%;
+  padding: 16px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -112,11 +113,12 @@ li {
 
 .product-title {
   text-align: center;
-  font-size: 30px;
-  margin: 0;
+  font-size: 24px;
+  margin: 5px 0 0 0;
 }
 
 .product-description {
+  display: none;
   text-align: center;
   margin: 0;
   color: #686868;
@@ -133,7 +135,7 @@ li {
 .product-price h5 {
   margin: 0;
   color: #333;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .product-price small {
