@@ -35,7 +35,7 @@ li {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -45,7 +45,8 @@ li {
   justify-content: center;
   gap: 25px 15px;
   flex-wrap: wrap;
-  margin: 15px;
+  width: 100%;
+  padding: 15px;
   max-width: 1250px;
 }
 
@@ -163,5 +164,11 @@ li {
 @media (max-width: 325px) {
   .card {
     width: 100%;
+    height: auto;
+  }
+
+  .product-image {
+    height: auto;
+    object-fit: cover;
   }
 }
