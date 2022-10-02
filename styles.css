@@ -54,6 +54,7 @@ li {
   flex-direction: column;
   align-items: center;
   width: 300px;
+  height: 415px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.56);
@@ -115,13 +116,20 @@ li {
   text-align: center;
   font-size: 24px;
   margin: 5px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-description {
-  display: none;
   text-align: center;
   margin: 0;
   color: #686868;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .product-price {
